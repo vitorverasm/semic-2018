@@ -1,0 +1,130 @@
+\documentclass[a0,portrait,brazil]{a0poster}
+\usepackage[utf8]{inputenc}
+
+\usepackage{multicol} 
+\columnsep=100pt
+\columnseprule=3pt
+
+\usepackage[svgnames]{xcolor} 
+\usepackage{times}
+\usepackage{scalefnt}
+\usepackage{comment}
+\usepackage{amsmath,environ}
+\usepackage{amsfonts} 
+\DeclareMathAlphabet\bfmathcal{OMS}{cmsy}{b}{n}
+
+\usepackage{graphicx}
+\graphicspath{{figures/}}
+\usepackage{booktabs} 
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{amsfonts, amsmath, amsthm, amssymb}
+\usepackage{wrapfig} 
+\definecolor{ku}{RGB}{144,26,30}
+\definecolor{ku-yellow}{RGB}{255,249,25}
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows,automata,positioning}
+\usetikzlibrary{arrows,shapes.gates.logic.US,shapes.gates.logic.IEC,calc}
+\renewcommand\tablename{Tabela}
+\renewcommand\figurename{Figura}
+\usepackage{lipsum}
+
+ \usepackage{eso-pic}
+               \newcommand\BackgroundIm{
+               \put(56,15){
+               \parbox[b][\paperheight]{\paperwidth}{%
+               \vfill
+               \centering
+               \includegraphics[height=\paperheight,width=\paperwidth,
+               keepaspectratio]{back2.png}
+               \vfill
+               }}}
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+
+\hyphenation{satisfa-tibilidade}
+\hyphenation{exa-tamente}
+\hyphenation{esco-lhendo}
+
+\begin{document}
+ \AddToShipoutPicture*{\BackgroundIm}
+
+\begin{minipage}[t]{0.97\linewidth}
+\vspace{14cm}
+\begin{center}
+\vspace{1cm} 
+\Huge \color{black} \textbf{Título} \color{Black}\\ [0.5cm] 
+%% \Huge \color{black} \textbf{} \color{Black}\\ [1cm]
+\Large \textbf{Aluno}$^ {1}$, \textbf{Professor}$^ {2}$\\[0.2cm]
+\large \text{$^{1}$Bolsista, Instituto Federal do Ceará - \textit {Campus Maracanaú}, aluno@gmail.com}\\[0.2cm]
+\large \text{$^{2}$Orientador, Instituto Federal do Ceará - \textit {Campus Maracanaú}, professor@ifce.edu.br}\\[0.2cm]
+\end{center}
+
+\end{minipage}
+\vspace{1cm} 
+
+\begin{multicols}{3} 
+
+%--------------------------------------------
+%	ABSTRACT
+%--------------------------------------------
+\color{black} 
+\begin{large}
+\section*{RESUMO}
+uccuuc
+\vspace{0.1cm}
+
+\textbf{Palavras-Chave:} Aprendizagem de Autômatos. \textit{Answer Set Programming}. Inferência Gramatical.
+
+%--------------------------------------------
+%	INTRODUCTION
+%--------------------------------------------
+\color{black}
+\section*{INTRODUÇÃO}
+
+\cite{Gebser}
+\lipsum[1-3] %TEXTO AQUI
+
+
+
+%--------------------------------------------
+%	METHODS
+%--------------------------------------------
+\color{black} 
+\section*{EXPERIMENTOS}
+
+\lipsum[1-5] %TEXTO AQUI
+
+
+%--------------------------------------------
+%	CONCLUSIONS
+%--------------------------------------------
+
+\color{black}
+\section*{CONCLUSÃO}
+
+\lipsum[1-3] %TEXTO AQUI
+
+
+%\color{black}
+%\section*{AGRADECIMENTOS}
+%Agradecemos ao Instituto Federal do Ceará por todo apoio recebido na elaboração deste trabalho.
+
+
+%--------------------------------------------
+%	REFERENCES
+%--------------------------------------------
+\vspace{-1cm}
+\color{black}
+\renewcommand{\refname}{REFERÊNCIAS}
+%\nocite{*} % Print all references regardless of whether they were cited in the poster or not
+\bibliographystyle{plain} % Plain referencing style
+\bibliography{references} % Use the example bibliography file sample.bib
+
+%--------------------------------------------
+%	ACKNOWLEDGEMENTS
+%--------------------------------------------
+
+%----------------------------------------------------------------------------------------
+\end{large}
+\end{multicols}
+\end{document}
